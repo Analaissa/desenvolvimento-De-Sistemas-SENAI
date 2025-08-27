@@ -1,0 +1,3 @@
+while(condicional){
+    console.log("*")
+    }
