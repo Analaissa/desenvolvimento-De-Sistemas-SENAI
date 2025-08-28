@@ -1,0 +1,11 @@
+var numero1 = Number(prompt("qual é primeiro numero"))
+var numero2 = Number(prompt("qual é o segundo numero"))
+var numero3 = Number(prompt("qual é o terceiro numero"))
+var numeros =[]
+numeros.push(numero1)
+numeros.push(numero2)
+numeros.push(numero3)
+console.log(numeros)
+console.log(numeros[2])
+console.log(numeros[1])
+console.log(numeros[0])
