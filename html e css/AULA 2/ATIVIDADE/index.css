@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226, 80, 80);
+color: thistle;
+}
+header{
+    text-align: center;
+    background-color: violet;
+    padding: 80px;
+    color: blue;
+}
+
+bolo-container{}
