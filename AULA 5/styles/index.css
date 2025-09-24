@@ -1,0 +1,19 @@
+#banner{
+width: 80%;
+height: 300px;
+border-radius: 5px;
+background-size:cover;
+display: flex;
+justify-content: center;
+align-items: end;
+background-image: url(../banner.jpg);
+background-position:center ;
+
+}
+
+#bannertextos{
+background-color: var(--corsecundaria);
+color: var(--textosbrancos);
+padding: 10px;
+
+}

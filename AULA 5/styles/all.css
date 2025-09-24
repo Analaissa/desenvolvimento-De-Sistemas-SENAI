@@ -1,0 +1,55 @@
+:root{
+--textosheader:  white;
+--corprimaria:rgb(84,0,175);
+--corsecundaria:rgb(238,0,255);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+justify-content: space-around;
+padding: 20px 0px;
+background-color: var(--corprimaria);
+color: var(--textosheader);
+align-items: center;
+}
+
+header a{
+text-decoration: none;
+color:var(--textosheader);
+}
+
+nav{
+    display: flex;
+   align-items: center;
+    gap: 30px;
+}
+
+paginaAtual{
+  padding: 5px;
+    background-color: var(--corsecundaria);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: var(--corprimaria);
+    color: var(textosbrancos);
+    position: absolute;
+    bottom: 0%;
+
+}
+
+main{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
