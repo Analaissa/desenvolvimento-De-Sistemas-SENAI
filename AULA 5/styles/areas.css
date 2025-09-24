@@ -1,21 +1,20 @@
-.imagemArea{
+.imagemarea{
     width: 150px;
     height: 150px;
-    background-image: ;
     background-position: center;
     background-size: cover;
 }
 
-.areaEspefica{
+.areaEspecifica{
     display:flex ;
     align-items: center;
     gap: 10px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgb(208, 208, 208);
-}}
+}
 
-#programação{
+#programacao{
     background-image: url(../programação.jpg) ;
 }
 

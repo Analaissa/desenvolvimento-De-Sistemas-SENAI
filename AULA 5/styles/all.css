@@ -36,7 +36,8 @@ paginaAtual{
     background-color: var(--corsecundaria);
 }
 
-footer{
+footer{ 
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px 0px;
