@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/cadastrologin.css">
+</head>
+<body>
+    <main>
+        <div id="bannerCadastro"></div>
+        <div id="formularioCadastro"></div>
+    <form method="get" action="#">
+        
+        <div class="inputlabel">
+            <label for="nome">Digite o seu nome:</label>
+        <input id="nome"  placeholder="EX : jhon Doe" type="text">
+        </div>
+        <div class="inputlabel">
+            <label for="email">Digite o Seu email*:</label>
+            <input id="email" placeholder="EX : fulano@gmail.com" type="text">
+        </div>
+
+        <div class="inputlabel">
+        <label for="senha">Digite  a sua senha*:</label>
+        <input required id="senha" placeholder="EX : senhasecreta" type="password">
+        </div>
+        
+        <div class="inputlabel">
+            <label for="idade">Digite a sua idade*:</label>
+            <input min="3" max="200" required id="idade" step="1" placeholder="EX: 22" type="number"
+        </div>
+        <div class="inputlabel">
+            <!--<input type="button" volue="cadastrar">-->
+            <button type="submit">cadastrar</button>
+            <button type="reset">resetar</button>
+        </div>
+
+        </form>
+    </main>
+</body>
+</html>
