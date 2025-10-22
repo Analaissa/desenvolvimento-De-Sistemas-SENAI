@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --primaria:rgb(255,119,0);
+}
+
+header{
+    background-color: var(--primaria);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+#btnmenu{
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+#menumobile{
+    display: none;
+}
+/* breakpoint - pc */
+@media screen and (min-whidth:600px) {
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and(max-whidth: 600px) {
+    /* body{
+    background-color:blue;
+} */
+     
+}
+
+@media screen and (orientation:landscape) {
+    body{
+        background-color: green;
+    }
+}
+@media screen and (orientation:portrait) {
+    body{
+        background-color: yellow;
+    }
+}
+@media print{
+    body{
+        color: red;
+    }
+}
