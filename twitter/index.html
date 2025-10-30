@@ -4,40 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>twitter clone</title>
-    <link rel="stylesheet" href=".style/index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <div class="container">
         <!--MENU LATERAL-->
         <aside class="sidebar">
-            <!-- <h2 class="logo"></h2>
+            <div class="logo">
+                <img id="imagem1" src="imagens/2021 Twitter logo - blue.png" alt=""></div>
             <nav>
-                <a href="#">Explorar</a>
-                <a href="#">notificações</a>
-                <a href="#">mensagens</a>
-                <a href="#">perfil</a>
-                <a href="mais"></a>
+                <a  href="#" class="active">pagina incial</a>
+                    <img id="imagem2" src="imagens/Default.svg" alt="explorar">
+                
+                <a href="#">
+                    <img id="imagem3" src="imagens/home.svg" alt="home"></a>
+                <a href="#">
+                   <img id="imagem4" src="imagens/Default (1).svg" alt="notificação"></a>
+                <a href="#">
+                    <img id="imagem5" src="imagens/Default (2).svg" alt="mensagens"></a>
+                <a href="#">
+                    <img id="imagem6" src="imagens/Selected.svg" alt="perfil"></a>
+                <a href="#">
+                    <img id="imagem7" src="imagens/Default (3).svg" alt="mais"></a>
             </nav>
-            <button class="tweet-btn">tweetar</button> -->
+            <button class="tweet-btn">tweetar</button>
         </aside>
 
         <!--FEED PRINCIPAL-->
         <main class="feed">
-            <!-- <header>
+            <header>
                 <h2>inicio</h2>
-            </header> -->
+            </header>
 
         <div class="post">
-            <!-- <img src="imagens/amanda.png" alt="avatar">
+            <img id="imagem8" src="imagens/amanda.png" alt="avatar">
             <div class="post-content">
                 <h4>@usuario <span>.2h </span></h4>
                 <p>este é um exemplo de tweet no clone do twitter feito com html e css </p>
                 <div class="actions">
-                    <span></span>
+                    <span>
+                        <img id="imagem9" src="imagens/comentario.svg" alt="comentario">
+                    </span>
+                    <span>
+                        <img id="imagem10" src="imagens/Default (4).svg" alt="repostar">
+                    </span>
+                    <span>
+                        <img id="imagem11" src="imagens/Selected (1).svg" alt="curtida">
+                    </span>
                 </div>
-            </div> -->
+            </div>
         </div>
         </main>
+
+        <!--TENDÊNCIA-->
+        <aside class="trends">
+            <h3>o que está acontecendo</h3>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>desenvolvimentoweb</li>
+                <li>frontend</li>
+            </ul>
+        </aside>
     </div>
 </body>
 </html>

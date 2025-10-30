@@ -10,8 +10,11 @@
     display: grid;
     grid-template-columns: 250px 1fr 300px;
     min-height: 100vh;
-    background:#000 ;
+    background:#dbdbdb ;
     color: #fff;
+}
+.logo img{
+    width: 60px;
 }
 
 /*MENU LATERAL*/
@@ -20,10 +23,57 @@
     padding: 20px;
 }
 
+.home{
+    width: 30px;
+}
 .logo{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#imagem1{
+    width:30px ;
+}
+
+#imagem2{
+ width: 30px;
+}
+
+#imagem3{
+    width: 30px;
+}
+
+#imagem4{
+    width: 30px;
+}
+
+#imagem5{
+    width: 30px;
+}
+
+#imagem6{
+    width: 30px;
+}
+
+#imagem7{
+    width: 30px;
+}
+
+#imagem8{
+    width: 80px;
+}
+
+#imagem9{
+    width: 20px;
+}
+
+#imagem10{
+    width: 20px;
+}
+
+#imagem11{
+    width: 20px;
 }
 
 .sidebar nav a {
@@ -38,7 +88,8 @@
 
 .sidebar nav a hover,
 .sidebar nav a.active{
-    background: #1d9bf0;
+background: #1d9bf0;
+
 }
 
 .tweet-btn{
@@ -63,4 +114,109 @@ top: 0;
 background: #000;
 padding: 15px;
 border-bottom: 1px solid #2f3336;
+}
+
+.tweet-box{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.tweet-box img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet-box input{
+    padding: 10px;
+    background: #000;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.tweet-box button{
+    background: #1d9bf0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.post{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.post img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-content h4{
+    margin-bottom: 5px;
+}
+
+.post-content span{
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.actions span{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/*TENDÊNCIA*/
+.trends{
+    padding: 20px;
+}
+
+.trends h3{
+    margin-bottom: 15px;
+}
+
+/* .trends ul{
+    list-styles:none;
+} */
+
+.trends li:hover{
+    background: #1d1f23;
+}
+
+/*MOBILE RESPONSIVO*/
+@media(max-width:900px){
+.container{
+grid-template-columns: 70px 1fr;
+
+    }
+}
+
+.sidebar nav a{
+    font-size: 0;
+}
+
+.sidebar nav a:before{
+    content:"";
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.trends{
+    display: none;
+}
+
+@media(max-width:600px){
+.tweet-box button{
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+.post-content p{
+        font-size: 0.9rem;
+    }
 }
