@@ -1,0 +1,62 @@
+# CREATE DATABASE IF NOT EXISTS Escola;
+USE Escoladb;
+
+  CREATE TABLE IF NOT EXISTS Alunos (
+idAluno INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(150) NOT NULL,
+cpf VARCHAR(11) UNIQUE NOT NULL,
+dataNascimento DATE NOT NULL,
+datacadastro VARCHAR(100)
+);
+
+CREATE TABLE professores (
+idprofessor INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(150) NOT NULL,
+email VARCHAR(120) UNIQUE NOT NULL,
+dataCadastro VARCHAR(100)
+);
+
+CREATE TABLE cursos (
+idcurso INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(150) UNIQUE  NOT NULL,
+cargaHorario INT NOT NULL,
+datacriacao VARCHAR(100)
+);
+
+CREATE TABLE disciplinas (
+iddisciplina INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(150) UNIQUE NOT NULL,
+idcurso INT NOT NULL,
+UNIQUE(nome,idCurso)
+);
+
+CREATE TABLE turma (
+idturma INT PRIMARY KEY AUTO_INCREMENT,
+codigo VARCHAR(20) UNIQUE NOT NULL,
+idcurso INT NOT NULL,
+ano INT NOT NULL
+);
+
+CREATE TABLE aulas (
+idAula INT PRIMARY KEY AUTO_INCREMENT,
+idturma INT NOT NULL,
+iddisciplina INT NOT NULL,
+dataAula DATE NOT NULL
+REFERENCES Disciplinaa(iddisciplina)
+);
+
+
+CREATE TABLE matriculas (
+idMatricula INT PRIMARY KEY AUTO_INCREMENT,
+idAluno INT NOT NULL,
+idturma INT NOT NULL,
+UNIQUE(idAluno,idTurma)
+);
+
+CREATE TABLE presenca (
+idpresenca INT PRIMARY KEY AUTO_INCREMENT,
+idAula INT NOT NULL,
+idaluno INT NOT NULL,
+presente BOOLEAN DEFAULT TRUE,
+UNIQUE(idAula,idAluno)
+);

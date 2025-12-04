@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS  lojavirtual;
+USE lojavirtual;
+
+CREATE TABLE clientes (
+idclientes INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(120) UNIQUE NOT NULL,
+datacadastro DATE NOT NULL
+);
